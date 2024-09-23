@@ -1,61 +1,54 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c2e3f7;
-    background-image: url('images/back.jpg');
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    background-color: rgba(160, 210, 234, 0.925); /* Fundo branco com transparência */
-    padding: 20px;
-    border-radius: 10px;
+nav {
+    background-color: #333;
+    color: rgb(101, 95, 95);
+    padding: 1em;
+    width: 100%;
 }
 
-header {
-    background: #03355e;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
     margin: 0;
 }
 
-section {
-    margin: 20px 0;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
+nav ul li {
+    margin: 0;
 }
 
-h2 {
+nav ul li a {
+    color: rgb(193, 211, 119);
+    text-decoration: none;
+}
+
+.container {
+    padding: 2em;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+h1 {
     border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 10px 0;
+    padding-bottom: 0.5em;
 }
 
 .foto-redonda {
-    display: block;
-    margin: 20px auto;
+    border-radius: 50%;
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid #838485; /* Adiciona uma borda preta */
+    display: block;
+    margin: 0 auto;
 }
